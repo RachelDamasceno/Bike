@@ -111,6 +111,12 @@ ul {
   gap: 0px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
 }
 .introducao-conteudo {
   align-self: flex-end;
@@ -129,5 +135,24 @@ ul {
   line-height: 1.5;
 }
 .introducao-ponto {
-  color: yellow;
+  color: #ffbb00;
+}
+
+.introducao a {
+  padding: 16px 32px;
+  background-color: #ffbb00;
+  display: inline-block;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  color: #000000;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
