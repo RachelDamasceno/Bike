@@ -104,6 +104,8 @@ ul {
 
 .main-bg {
   background-color: #000000;
+  /* Usando box shadow para criar efeito de transbordar img */
+  box-shadow: inset 0px -120px white;
 }
 
 .introducao {
@@ -120,7 +122,7 @@ ul {
 }
 .introducao-conteudo {
   align-self: flex-end;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
 }
 
 .introducao h1 {
@@ -155,4 +157,11 @@ ul {
 
 .introducao a:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.introducao img {
+  /* Assim a img vai transbordar */
+  height: 100%;
+  /* Quando tela pequna corta foca a img no centro */
+  object-fit: cover;
 }
