@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -32,6 +36,8 @@ ul {
   display: inline-block;
   font-size: 18px;
   position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 /* Criando detalhe que aparece em baixo do link ao passar o mouse */
@@ -129,12 +135,16 @@ ul {
   margin-bottom: 32px;
   font-size: 64px;
   line-height: 1.125;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 .introducao p {
   color: #b2b2b2;
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.5;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 .introducao-ponto {
   color: #ffbb00;
@@ -151,8 +161,10 @@ ul {
   color: #332200;
   font-size: 18px;
   line-height: 1.33;
-  font-weight: bold;
+
   text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 
 .introducao a:hover {
