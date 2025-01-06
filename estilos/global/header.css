@@ -1,0 +1,87 @@
+.header-bg {
+  background-color: #000000;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 16px 0px;
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+/* Criando detalhe que aparece em baixo do link ao passar o mouse */
+.header-menu a:after {
+  content: "";
+  background: white;
+  transition: 0.3s;
+
+  /* assim digo que ele inicia com 0 de largura */
+  width: 0px;
+  height: 2px;
+  display: block;
+  margin-top: 4px;
+
+  position: absolute;
+  /* retirar do fluxo para que ele não atrapalhe a formatação */
+}
+.header-menu a:hover::after {
+  width: 100%;
+  /* assim ele vai esticar ate o tamnho do elemento do pai, no caso o texto do a */
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  /* Assim o menu não se expande para sempre fica mais centralizado, ajuda da responsividade*/
+  margin: 0 auto;
+}
+.header-menu-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .header-menu a:hover {
+    background-color: #282828;
+  }
+  .header-menu a {
+    background-color: #111111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a:after {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .header-menu a {
+    padding: 8px 12px;
+  }
+  .header-menu {
+    gap: 12px;
+    font-size: 14px;
+  }
+  .header {
+    justify-content: center;
+  }
+}

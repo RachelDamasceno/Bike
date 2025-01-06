@@ -1,0 +1,69 @@
+.main-bg {
+  background-color: #000000;
+  /* Usando box shadow para criar efeito de transbordar img */
+  box-shadow: inset 0px -120px white;
+}
+
+.introducao {
+  color: white;
+  gap: 0px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+}
+.introducao-conteudo {
+  align-self: flex-end;
+  padding-bottom: 200px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+}
+.introducao p {
+  margin-bottom: 20px;
+}
+/* .introducao-ponto {
+  color: #ffbb00;
+} */
+
+.introducao img {
+  /* Assim a img vai transbordar */
+  height: 100%;
+  /* Quando tela pequna corta foca a img no centro */
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .main-bg {
+    background-color: #111111;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+  .introducao h1 {
+    font-size: 38px;
+    margin-bottom: 16px;
+  }
+  .introducao p {
+    font-size: 18px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .botao {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 20px 0px 20px;
+  }
+  .introducao-img img {
+    width: 100%;
+    height: 300px;
+  }
+}
