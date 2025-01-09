@@ -1,7 +1,7 @@
 .main-bg {
   background-color: #000000;
   /* Usando box shadow para criar efeito de transbordar img */
-  box-shadow: inset 0px -120px white;
+  box-shadow: inset 0px -1200px white;
 }
 
 .introducao {
@@ -41,15 +41,12 @@
 @media (max-width: 800px) {
   .main-bg {
     background-color: #111111;
-    box-shadow: inset 0 -60px #ffffff;
+    box-shadow: inset 0 -2000px #ffffff;
   }
   .introducao h1 {
-    font-size: 38px;
     margin-bottom: 16px;
   }
-  .introducao p {
-    font-size: 18px;
-  }
+
   .introducao-conteudo {
     padding-bottom: 0px;
   }

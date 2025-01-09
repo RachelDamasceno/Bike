@@ -56,3 +56,15 @@
   font-family: "Roboto";
   font-weight: 400;
 }
+
+@media (max-width: 800px) {
+  .font-1-xxl,
+  .font-2-l,
+  .font-2-l-b {
+    font-size: 2rem;
+  }
+  .font-2-l,
+  .font-2-l-b {
+    font-size: 1.125rem;
+  }
+}
