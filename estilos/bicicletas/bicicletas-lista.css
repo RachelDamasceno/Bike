@@ -1,3 +1,63 @@
-body {
-  background-color: aquamarine;
+.bicicleta-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.bicicleta-lista h2 {
+  margin-bottom: 40px;
+}
+
+.bicicleta-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  /* Centralizar e vazar imagem */
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Cria barra de rolagem na horizontal somente para o ul */
+  overflow-x: auto;
+}
+.bicicleta-lista li {
+  /* Flex 1 é um valor que pode ser atribuído à propriedade flex-grow em CSS, que indica que todos os elementos dentro de um contêiner flex devem ser distribuídos igualmente */
+  flex: 1;
+  /* So vai diminuir ater 280px depois disso os li vao vazar, não vao acompanhar o conteiner */
+  min-width: 280px;
+}
+
+.bicicleta-lista img {
+  margin-bottom: 16px;
+}
+.bicicleta-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.bicicleta-lista h3::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+  /* especificando que a animação sera no width e que ela vai ocorrer em 0.3 segundos */
+  transition: width 0.3s;
+}
+.bicicleta-lista a:hover h3::before {
+  width: 24px;
+}
+.bicicleta-lista li span {
+  padding-left: 20px;
+}
+
+.bicicleta-lista a {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .bicicleta-lista {
+    padding-bottom: 60px;
+  }
+  .bicicleta-lista ul {
+    gap: 20px;
+  }
 }

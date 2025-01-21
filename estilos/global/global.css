@@ -18,3 +18,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Selecionar todas a imagens que tem src com a terminação jpg */
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
