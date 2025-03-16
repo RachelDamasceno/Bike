@@ -1,3 +1,4 @@
+/* --cor-numero vc usa em outros css */
 :root {
   --cor-12: #000000;
   --cor-11: #111111;
@@ -20,6 +21,7 @@
   --cor-p1: #ffbb00;
 }
 
+/* cor-numero vc usa no html */
 .cor-0 {
   color: var(--cor-0);
 }

@@ -1,5 +1,7 @@
 .tecnologia-bg {
   background-color: var(--cor-11);
+  /* Para causar efeito de vazamento da imagem.  A primeira sombra e para cima, a segunda e para baixo*/
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
 }
 .tecnologia {
   display: grid;
@@ -11,4 +13,65 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
+}
+
+/* Ajustando o conteudo, para que sobre shadow e de efeito de vazamento */
+.tecnologia-conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+/* O > diz que so quer pegar o span que esta dentron do conteudo, o filho direto da div conteudo*/
+.tecnologia-conteudo > span {
+  display: block;
+  margin-bottom: 20px;
+}
+.tecnologia-conteudo h2 {
+  margin-bottom: 32px;
+}
+.tecnologia-conteudo > p {
+  margin-bottom: 20px;
+}
+.tecnologia a {
+  margin-bottom: 80px;
+}
+
+.tec-vantagens {
+  display: flex;
+  gap: 40px;
+}
+.tec-vantagens h3 {
+  margin-bottom: 8px;
+  /* Para o titulo nao quebrar */
+  width: max-content;
+}
+.tec-vantagens img {
+  margin-bottom: 8px;
+
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    /* tira o box shadow */
+    box-shadow: initial;
+  }
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tecnologia-imagem {
+    display: none;
+  }
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .tec-vantagens {
+    flex-direction: column;
+  }
 }

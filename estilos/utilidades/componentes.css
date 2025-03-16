@@ -27,3 +27,9 @@
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
+.parceiros li {
+  /* para deixar a imagem alinhada ao centro de cada grid */
+  display: flex;
+  padding: 32px;
+  border-left: 2px solid var(--cor-2);
+}
